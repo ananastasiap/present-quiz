@@ -1,0 +1,19 @@
+.header {
+  position: relative;
+  height: 20vh;
+
+  &__logo-box {
+    display: inline-block;
+    position: absolute;
+    top: 3rem;
+    left: 3rem;
+  }
+
+  &__popup {
+    width: 100vw;
+    height: 100vh;
+
+    border: none;
+    background-image: linear-gradient(to right bottom, $color-primary-light, $color-primary-dark);
+  }
+}
