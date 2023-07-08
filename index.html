@@ -3,15 +3,19 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans:wght@400;700&display=swap" rel="stylesheet">
     <title>Quest</title>
   </head>
   <body>
-    <!-- HEADER POPUP -->
+    <!-- HEADER -->
     <header class="header">
       <div class="header__logo-box">
         <a href="index.html" class="logo-text">BA</a>
       </div>
 
+      <!-- POPUP -->
       <dialog class="header__popup" open>
         <h1 class="heading-primary u-margin-top-huge">
           <span class="heading-primary--main">ba</span>
@@ -20,7 +24,7 @@
           <span class="heading-primary--main">or</span>
           <span class="heading-primary--sub">quest</span>
         </h1>
-        <button type="button" class="btn-close">Start</button>
+        <button type="button" class="btn btn--close">Start</button>
       </dialog>
     </header>
 
@@ -33,7 +37,7 @@
           </h2>
           <div class="form">
             <p class="section__question-box--text u-margin-bottom-medium"></p>
-            <input id="answerInput" type="text" class="form__input u-margin-bottom-medium" placeholder="пишу...">
+            <input id="answerInput" type="text" class="form__input u-margin-bottom-medium" placeholder="пишу..." required>
             <button type="submit" class="btn btn-submit">ответить</button>
           </div>
         </div>

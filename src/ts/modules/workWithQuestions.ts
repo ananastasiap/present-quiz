@@ -50,6 +50,7 @@ export const workWithQuestions = () => {
 
       } else {
         const wrongAnswerSound = new Audio('/sound/wrong-answer.mp3');
+        wrongAnswerSound.currentTime = 0;
         wrongAnswerSound.play();
       }
   }
