@@ -4,4 +4,15 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+
+  &__input {
+    width: 60%;
+
+    padding: 3rem;
+
+    font-size: $default-font-size;
+    color: $color-primary-dark;
+    border: 2px solid $color-secondary-dark;
+    border-radius: 3rem;
+  }
 }
