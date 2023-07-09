@@ -1,7 +1,7 @@
 export const closeButtonImg = () => {
   let indexOfImg: number = 0;
   const closeButtonImgs: Array<string> = ['/images/start.png', '/images/start-1.png'];
-  const closeButton: HTMLImageElement | null = document.querySelector('.btn-img');
+  const closeButton: HTMLImageElement | null = document.querySelector('.btn__img');
 
   if (!closeButton) {
     return;

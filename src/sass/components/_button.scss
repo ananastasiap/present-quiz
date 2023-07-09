@@ -1,6 +1,5 @@
 .btn {
   display: inline-block;
-  padding: 1.5rem 4rem;
 
   font-size: $default-font-size;
   border-radius: 10rem;
@@ -22,17 +21,21 @@
     transform: translateY(-1px);
     box-shadow: 0 .5rem 1rem $color-black;
   }
-}
 
-.btn-img {
-  width: 45%;
+  &__img {
+    width: 55%;
+    transition: opacity 0.5s;
+  }
 
-  transition: opacity 0.5s;
+  &--close {
+    margin-left: 19rem;
+  }
 }
 
   // &--white {
   //   color: $color-grey-dark;
   //   background: $color-white;
+  // 
 
   //   &::after {
   //     background-color: $color-white;
