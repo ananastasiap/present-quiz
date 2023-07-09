@@ -71,7 +71,7 @@ export const workWithQuestions = () => {
     answerInputElement.value = '';
     currentQuestionIndex++;
 
-    if (currentQuestionIndex < questions.length) {
+    if (currentQuestionIndex < questions.length - 1) {
       currentQuestion = questions[currentQuestionIndex];
       showQuestion();
       } else {
