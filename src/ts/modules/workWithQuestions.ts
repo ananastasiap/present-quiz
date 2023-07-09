@@ -71,10 +71,12 @@ export const workWithQuestions = () => {
     answerInputElement.value = '';
     currentQuestionIndex++;
 
-    if (currentQuestionIndex < questions.length - 1) {
+    if (currentQuestionIndex < questions.length) {
       currentQuestion = questions[currentQuestionIndex];
       showQuestion();
       } else {
+        imageElement.style.display = 'none';
+        buttonNext.style.display = 'none';
         const final = document.createElement('img');
         final.src = '/images/final.png';
         final.classList.add('map');
