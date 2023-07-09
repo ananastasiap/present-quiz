@@ -9,19 +9,22 @@ export const workWithQuestions = () => {
   const questionBox: HTMLElement | null = document.querySelector('.section__question--box');
   const imageElement: HTMLImageElement | null = document.querySelector('.image');
   const buttonNext: HTMLButtonElement | null = document.querySelector('.btn--next');
+  const numberOfQuestion: HTMLElement | null = document.querySelector('.number-of-question');
 
   if (!answerInputElement || !questionTextElement ||
       !answerInputElement || !imageElement ||
-      !questionBox || !buttonNext) {
+      !questionBox || !buttonNext || !numberOfQuestion) {
     return;
   }
 
   function showQuestion() {
-    if (!questionTextElement || !answerInputElement) {
+    if (!questionTextElement || !answerInputElement || !numberOfQuestion) {
       return;
     }
 
     questionTextElement.textContent = currentQuestion.text;
+    const questionNumber: number = currentQuestionIndex + 1;
+    numberOfQuestion.textContent = questionNumber.toString();
     answerInputElement.value = '';
     answerInputElement.placeholder = 'пишу...';
 
