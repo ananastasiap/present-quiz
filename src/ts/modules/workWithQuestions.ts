@@ -77,6 +77,11 @@ export const workWithQuestions = () => {
       currentQuestion = questions[currentQuestionIndex];
       showQuestion();
       } else {
+        const heading: HTMLElement | null = document.querySelector('.heading-secondary');
+        if (heading) {
+          heading.textContent = 'Ты супер!';
+        }
+
         questionTextElement.style.display = 'none';
         answerInputElement.style.display = 'none';
         submitButton.style.display = 'none';
