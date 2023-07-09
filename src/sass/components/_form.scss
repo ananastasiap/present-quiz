@@ -12,8 +12,8 @@
 
     font-size: $default-font-size;
     color: $color-primary-dark;
-    border: 2px solid $color-tertiary-light;
-    background-color: rgba($color-tertiary-light, 0.1);
+    border: 2px solid $color-primary-light;
+    background-color: rgba($color-primary-light, 0.1);
     border-radius: 3rem;
   }
 }
@@ -21,4 +21,7 @@
 .map {
   width: 90%;
   margin: 0 auto;
+
+  border: 0.2rem solid $color-primary;
+  border-radius: 2rem;
 }

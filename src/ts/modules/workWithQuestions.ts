@@ -5,7 +5,7 @@ export const workWithQuestions = () => {
   let currentQuestion = questions[currentQuestionIndex];
   const questionTextElement: HTMLElement | null = document.querySelector('.section__question-box--text');
   const answerInputElement: HTMLInputElement | null = document.querySelector("#answerInput");
-  const submitButton: HTMLButtonElement | null = document.querySelector('.btn-submit');
+  const submitButton: HTMLButtonElement | null = document.querySelector('.btn--submit');
   const questionBox: HTMLElement | null = document.querySelector('.section__question--box');
   const imageElement: HTMLImageElement | null = document.querySelector('.image');
   const buttonNext: HTMLButtonElement | null = document.querySelector('.btn--next');
