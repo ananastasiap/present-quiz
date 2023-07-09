@@ -20,36 +20,31 @@ body {
 
 .heading-primary {
   display: grid;
+  gap: 0 7rem;
   grid-template-columns: repeat(2, 25%);
-  gap: 0 5.5rem;
   justify-content: center;
   align-content: center;
 
-  color: $color-secondary-light;
+  color: $color-white;
   text-transform: uppercase;
-
-  /* remove shaking */
   backface-visibility: hidden;
 
   &--main {
     display: inline-block;
     grid-column-start: 1;
-
     margin-right: 5rem;
-
 
     font-size: 7rem;
     font-weight: 500;
     letter-spacing: 2rem;
 
-    // animation-name: moveInLeft;
-    // animation-duration: 1s;
-    // animation-timing-function: ease-out;
+    animation-name: moveInBottom;
+    animation-duration: 1s;
+    animation-timing-function: ease-out;
   }
 
   &--sub {
     display: inline-block;
-
     grid-column-start: 2;
     grid-row-start: 3;
 
@@ -57,11 +52,16 @@ body {
     font-weight: 400;
     letter-spacing: 2rem;
 
+    opacity: 0;
+    visibility: hidden;
+
     transform: rotate(270deg);
 
-    // animation-name: moveInRight;
-    // animation-duration: 1s;
-    // animation-timing-function: ease-out;
+    animation-name: moveInLeft;
+    animation-duration: 0.5s;
+    animation-delay: 1s;
+    animation-timing-function: ease-out;
+    animation-fill-mode: forwards;
   }
 }
 
