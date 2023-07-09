@@ -61,7 +61,9 @@ export const workWithQuestions = () => {
   // NEXT QUESTION
   function handleNext() {
     if (!imageElement || !buttonNext ||
-        !answerInputElement || !questionBox) {
+        !answerInputElement || !questionBox ||
+        !questionTextElement || !submitButton ||
+        !numberOfQuestion) {
       return;
     }
 
@@ -75,8 +77,11 @@ export const workWithQuestions = () => {
       currentQuestion = questions[currentQuestionIndex];
       showQuestion();
       } else {
-        imageElement.style.display = 'none';
-        buttonNext.style.display = 'none';
+        questionTextElement.style.display = 'none';
+        answerInputElement.style.display = 'none';
+        submitButton.style.display = 'none';
+        numberOfQuestion.style.display = 'none';
+
         const final = document.createElement('img');
         final.src = '/images/final.png';
         final.classList.add('map');
