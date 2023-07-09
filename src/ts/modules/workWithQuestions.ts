@@ -90,7 +90,7 @@ export const workWithQuestions = () => {
         const final = document.createElement('img');
         final.src = '/images/final.png';
         final.classList.add('map');
-        document.body.appendChild(final);
+        questionBox.appendChild(final);
       }
     }
 
