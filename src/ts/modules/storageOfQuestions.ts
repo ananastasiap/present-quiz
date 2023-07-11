@@ -35,7 +35,7 @@ export const questions: Question[] = [
   createQuestion(
     'Крашиха твоей мамы, мечта её очей',
     'власова',
-    '/images/start.jpg',
+    '/images/vlasova.png',
     'Описание изображения 3'
   ),
   createQuestion(
@@ -65,7 +65,7 @@ export const questions: Question[] = [
   createQuestion(
     'Кто выступал голограммой на концерте?',
     'юнги',
-    '/images/start.jpg',
+    '/images/yoongi.png',
     'Описание изображения 3'
   ),
   createQuestion(
@@ -77,7 +77,7 @@ export const questions: Question[] = [
   createQuestion(
     'Душнила + шпала',
     'артоны',
-    '/images/start.jpg',
+    '/images/artoni.png',
     'Описание изображения 3'
   ),
   createQuestion(
